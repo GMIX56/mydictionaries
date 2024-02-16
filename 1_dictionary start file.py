@@ -91,7 +91,7 @@ print('*****  end section 4 ********')
 print()
 
 
-'''
+
 
 
 
@@ -113,14 +113,19 @@ print('*****  end section 5 ********')
 print()
 
 
-'''
+
 
 
 print()
 print('*****  start section 6 - using get and clear ********')
 print()
 
+phone = phonebook.get('Chris','555-5555')
+print(phone)
 
+phonebook.clear()
+
+print(phonebook)
 
 
 
@@ -135,7 +140,9 @@ print()
 print('*****  start section 7 - using pop method ********')
 print()
 
-
+print(phonebook)
+remove = phonebook.pop('Chris','notfound')
+print(remove)
 
 
 
@@ -150,7 +157,9 @@ print()
 print('*****  start section 8 - using popitem ********')
 print()
 
-
+print(phonebook)
+a = phonebook.popitem()
+print(a)
 
 
 
@@ -159,13 +168,20 @@ print()
 print('*****  end section 8 ********')
 print()
 
-
+'''
 
 print()
 print('*****  start section 9 - using random and converting to list ********')
 print()
 
+list_of_keys = list(phonebook)
 
+random_key = random.choice(list_of_keys)
+print(random_key)
+print(phonebook[random_key])
+
+
+print(phonebook[random.choice(list(phonebook))])
 
 
 
@@ -173,7 +189,7 @@ print()
 print('*****  end section 9 ********')
 print()
 
-
+'''
 '''
 
 
